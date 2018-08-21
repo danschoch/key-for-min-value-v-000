@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
     nil
   else
     name_hash.collect do |key, value|
-      @val_array = value
+      @val_array << value
     end
     @val_array.each_with_index do |value, index|
       if (@val_array[0] <=> value) == 1
