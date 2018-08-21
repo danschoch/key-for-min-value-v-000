@@ -16,6 +16,10 @@ def key_for_min_value(name_hash)
         @val_array
       end
     end
+    name_hash.detect do |key, value|
+      if value == @val_array[0]
+        key
+      end
+    end
   end
-  @val_array[0]
 end
